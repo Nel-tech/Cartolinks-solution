@@ -34,7 +34,7 @@ function IconsGallery() {
                   <Image
                     src={card.image}
                     alt={card.title}
-                    fill
+                    fill={true}
                     className="object-contain"
                   />
                 </div>

@@ -125,8 +125,8 @@ export function HeroCarousel() {
                 onClick={() => setCurrentSlide(index)}
                 className={`w-2 cursor-pointer h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-colors ${
                   index === currentSlide 
-                    ? "bg-[#F3F4F6FF] dark:bg-black" 
-                    : "bg-[#F3F4F6FF] dark:bg-[#F3F4F6FF]"
+                    ? "bg-black dark:bg-[#F3F4F6FF]" 
+                    : "bg-[#F3F4F6FF] dark:bg-gray-500"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

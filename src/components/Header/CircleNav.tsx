@@ -9,7 +9,7 @@ function CircleNav() {
     bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
     shadow-md ring-1 ring-white/50 dark:ring-black/30
     flex items-center justify-center
-    relative overflow-hidden
+    relative overflow-hidden cursor-pointer
   "
 >
   <div

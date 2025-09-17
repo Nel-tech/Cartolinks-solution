@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import NavIcon from "./Header/NavIcon";
 import CircleNav from "./Header/CircleNav";
+import Link from "next/link";
 import {
   ChevronDownIcon,
   SunIcon,
@@ -18,17 +19,7 @@ import { HeadsetIcon } from "lucide-react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import ActionButton from "./Header/ActionButton";
 import clsx from "clsx";
-
-/* -------------------- Nav Links -------------------- */
-const NAV_LINKS = [
-  { key: "home", src: "/icons/Home.svg", alt: "Home", active: true },
-  { key: "gallery", src: "/icons/Image.svg", alt: "Gallery" },
-  { key: "video", src: "/icons/Video.svg", alt: "Video" },
-  { key: "enhancer", src: "/icons/Enhancer.svg", alt: "Enhancer" },
-  { key: "realtime", src: "/icons/RealTime.svg", alt: "Real-time" },
-  { key: "compass", src: "/icons/Edit.svg", alt: "Edit" },
-  { key: "assets", src: "/icons/Assets.svg", alt: "Assets" },
-];
+import { NAV_LINKS } from "@/helpers/mock";
 
 export default function Header() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -40,7 +31,7 @@ export default function Header() {
     setMounted(true);
 
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); // tweak threshold as needed
+      setIsScrolled(window.scrollY > 10); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +46,7 @@ export default function Header() {
   const ThemeToggle = () => (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-2xl bg-gray-100 hover:bg-gray-200 
+      className="p-2 rounded-2xl cursor-pointer bg-gray-100 hover:bg-gray-200 
                  dark:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors"
     >
       {resolvedTheme === "dark" ? (
@@ -106,18 +97,20 @@ export default function Header() {
         </div>
 
         {/* Center Nav */}
-        <div className="hidden md:flex gap-4 bg-gray-100 dark:bg-zinc-800 px-3 py-2 rounded-2xl">
+        <div className="hidden md:flex gap-4 bg-gray-100 dark:bg-white px-3 py-2 rounded-2xl">
           {NAV_LINKS.map(({ key, src, alt, active }) => (
-            <NavIcon key={key} src={src} alt={alt} active={active} />
+            <Link href="#"  key={key}> 
+            <NavIcon  src={src} alt={alt} active={active} />
+            </Link>
           ))}
         </div>
 
         {/* Right Actions (Desktop) */}
-        <div className="hidden sm:flex items-center gap-5 md:gap-3">
-          <ActionButton Icon={PhotoIcon} label="Gallery" />
+        <div className="hidden sm:flex items-center  gap-5 md:gap-3">
+          <ActionButton  Icon={PhotoIcon} label="Gallery" />
           <ActionButton Icon={HeadsetIcon} label="Support" />
 
-          <button className="p-2 rounded-2xl text-gray-900 bg-gray-100 hover:bg-gray-200 dark:text-white dark:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors">
+          <button className="p-2 rounded-2xl cursor-pointer text-gray-900 bg-gray-100 hover:bg-gray-200 dark:text-white dark:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors">
             <BellIcon className="w-5 h-5" />
           </button>
 
@@ -126,12 +119,12 @@ export default function Header() {
         </div>
 
         {/* Right Actions (Mobile) */}
-        <div className="flex items-center gap-2 sm:hidden">
+        <div className="flex items-center gap-4 sm:hidden">
           <button className="p-2 rounded-2xl text-gray-900 bg-gray-100 hover:bg-gray-200 dark:text-white dark:bg-zinc-800 dark:hover:bg-zinc-700 transition-colors">
             <BellIcon className="w-5 h-5" />
           </button>
           <ThemeToggle />
-
+          <CircleNav/>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -163,7 +156,7 @@ export default function Header() {
           <div className="mt-2 px-4 pb-6">
             <div className="space-y-4">
               {NAV_LINKS.map(({ key, src, alt, active }) => (
-                <a
+                <Link
                   key={key}
                   href="#"
                   className="flex items-center gap-3 rounded-lg px-3 py-2 text-base font-semibold text-gray-800 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
@@ -176,7 +169,7 @@ export default function Header() {
                     className={`${active ? "opacity-100" : "opacity-60"} transition-opacity dark:invert`}
                   />
                   {alt}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

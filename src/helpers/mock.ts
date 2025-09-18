@@ -2,7 +2,7 @@ import { HeroCard, IconCard } from "./type";
 
 export const NAV_LINKS = [
   { key: "home", src: "/icons/NavIcons/Home.svg", alt: "Home", active: true },
-  { key: "gallery", src: "/icons/NavIcons/Image.svg", alt: "Gallery" },
+  { key: "gallery", src: "/icons/NavIcons/Gallery.svg", alt: "Gallery" },
   { key: "video", src: "/icons/NavIcons/Video.svg", alt: "Video" },
   { key: "enhancer", src: "/icons/NavIcons/Enhancer.svg", alt: "Enhancer" },
   { key: "realtime", src: "/icons/NavIcons/RealTime.svg", alt: "Real-time" },

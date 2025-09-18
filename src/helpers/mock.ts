@@ -201,7 +201,7 @@ export const iconcards: IconCard[] = [
   `,
 },
 
-  {
+{
   id: 7,
   title: "Motion Transfer",
   isNew: true,
@@ -210,7 +210,7 @@ export const iconcards: IconCard[] = [
   image: "/icons/GalleryIcons/MotionTransfer.svg",
   style: `
     relative block aspect-square w-[42px] h-[42px] rounded-[10px]
-    bg-[linear-gradient(0deg,rgb(206,246,255)_0%,rgb(41,73,98)_100%)]
+    bg-black
     shadow-[inset_0_0_0_0.5px_rgba(0,0,0,0.1),inset_0_1px_1px_0_rgba(255,255,255,0.1),inset_0_1px_5px_0_rgba(255,255,255,0.1)]
     cursor-pointer
   `,

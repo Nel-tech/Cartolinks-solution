@@ -1,14 +1,11 @@
-
-
 export interface HeroCard {
   id: number;
-    title: string;
+  title: string;
   subtitle: string;
   description: string;
   buttonText: string;
   image: string;
 }
-
 
 export interface IconCard {
   id: number;
@@ -16,8 +13,6 @@ export interface IconCard {
   isNew: boolean;
   description: string;
   buttonText: string;
-  style:string;
+  style: string;
   image: string;
-
 }
-

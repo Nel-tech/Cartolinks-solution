@@ -9,11 +9,8 @@ const footerLinks = [
 function Footer() {
   return (
     <div>
-      {/* Header Section */}
       <header className="flex items-center justify-between gap-4 sm:gap-6 p-4 sm:p-6">
-        <h1 className="text-lg sm:text-xl font-semibold text-black dark:text-white">
-          Gallery
-        </h1>
+        <h1 className="text-lg sm:text-xl font-semibold text-black dark:text-white">Gallery</h1>
 
         <nav className="flex flex-wrap gap-3 sm:gap-6">
           {footerLinks.map(({ label, Icon }) => (
@@ -29,7 +26,6 @@ function Footer() {
         </nav>
       </header>
 
-      {/* Footer Section */}
       <footer className="bg-[#212121] dark:bg-zinc-900 mt-1">
         <div className="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
           {/* Brand */}
@@ -48,7 +44,6 @@ function Footer() {
             </span>
           </div>
 
-          {/* Curated By */}
           <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-0">
             <h2 className="text-white dark:text-gray-300 text-lg sm:text-xl font-semibold sm:mr-2">
               curated by

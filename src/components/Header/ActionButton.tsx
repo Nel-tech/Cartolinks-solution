@@ -13,4 +13,4 @@ function ActionButton({
   );
 }
 
-export default ActionButton
+export default ActionButton;

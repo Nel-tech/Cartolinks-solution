@@ -5,10 +5,10 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div>
-      <Header/>
-      <HeroCarousel/>
-      <IconsGallery/>
-      <Footer/>
+      <Header />
+      <HeroCarousel />
+      <IconsGallery />
+      <Footer />
     </div>
   );
 }

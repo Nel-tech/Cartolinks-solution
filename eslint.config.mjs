@@ -10,15 +10,21 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // Base Next.js + TypeScript + Prettier
+  ...compat.extends("next/core-web-vitals", "next/typescript", "plugin:prettier/recommended"),
   {
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
+    ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts"],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        project: "./tsconfig.json",
+      },
+    },
+    rules: {
+      "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+      "prettier/prettier": ["error"],
+    },
   },
 ];
 

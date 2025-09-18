@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Tech Internship Application for Frontend Developer positions. ⚡ Build a pixel-perfect Next.js + Tailwind CSS app with dark/light mode toggle as part of the assignment.",
   icons: {
-    icon: "/Logo.svg",
+    icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },

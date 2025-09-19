@@ -1,13 +1,13 @@
 import Header from "@/components/header";
 import { HeroCarousel } from "@/components/HeroCarousel";
-import IconsGallery from "@/components/IconsGallery";
+import Generate from "@/components/Generate";
 import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div>
       <Header />
       <HeroCarousel />
-      <IconsGallery />
+      <Generate />
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import { iconcards } from "@/helpers/mock";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-function IconsGallery() {
+function Generate() {
   return (
     <div className="p-4 sm:p-6">
       <header className="flex justify-between gap-4 mb-6">
@@ -61,4 +61,4 @@ function IconsGallery() {
   );
 }
 
-export default IconsGallery;
+export default Generate;

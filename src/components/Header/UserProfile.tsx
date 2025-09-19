@@ -3,9 +3,9 @@ import CircleNav from "./CircleNav";
 
 export default function UserProfile() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 md:gap-1">
       <CircleNav />
-      <span className="font-semibold text-sm  lg:inline text-gray-900 dark:text-gray-100">
+      <span className="font-semibold text-sm md:hidden  lg:inline text-gray-900 dark:text-gray-100">
         benevolenternimblebot
       </span>
       <ChevronDownIcon className="w-4 h-4  lg:inline text-gray-900 dark:text-gray-100" />

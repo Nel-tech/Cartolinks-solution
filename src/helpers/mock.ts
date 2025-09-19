@@ -1,5 +1,6 @@
 import { HeroCard, IconCard } from "./type";
 
+// Navigation
 export const NAV_LINKS = [
   { key: "home", src: "/icons/NavIcons/Home.svg", alt: "Home", active: true },
   { key: "gallery", src: "/icons/NavIcons/Gallery.svg", alt: "Gallery" },
@@ -9,6 +10,8 @@ export const NAV_LINKS = [
   { key: "compass", src: "/icons/NavIcons/Edit.svg", alt: "Edit" },
   { key: "assets", src: "/icons/NavIcons/Assets.svg", alt: "Assets" },
 ];
+
+// HeroSection
 export const heroCards: HeroCard[] = [
   {
     id: 1,
@@ -106,6 +109,8 @@ export const heroCards: HeroCard[] = [
   },
 ];
 
+// IconGallery
+
 export const iconcards: IconCard[] = [
   {
     id: 1,
@@ -129,7 +134,7 @@ export const iconcards: IconCard[] = [
     isNew: false,
     description: "Generate videos with Pica, Runway, Luma and more",
     buttonText: "Open",
-    image: "/icons/GalleryIcons/video.svg",
+    image: "/icons/GalleryIcons/Video.svg",
     style: `
     block relative w-[42px] h-[42px]
     rounded-[10px]
@@ -190,7 +195,7 @@ export const iconcards: IconCard[] = [
     isNew: true,
     description: "Lip sync any video to any audio",
     buttonText: "Open",
-    image: "/icons/GalleryIcons/Video LipSync.svg",
+    image: "/icons/GalleryIcons/VideoLipSync.svg",
     style: `
     relative block aspect-square w-[42px] h-[42px] rounded-[10px]
     bg-[linear-gradient(0deg,rgb(206,246,255)_0%,rgb(41,73,98)_100%)]

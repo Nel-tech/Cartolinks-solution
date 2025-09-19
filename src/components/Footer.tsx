@@ -26,35 +26,28 @@ function Footer() {
         </nav>
       </header>
 
-      <footer className="bg-[#212121] dark:bg-zinc-900 mt-1">
-        <div className="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-          {/* Brand */}
+      <footer className="bg-[#212121] dark:bg-zinc-900">
+        <div className="px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
           <div className="flex items-center gap-3">
-            <div className="bg-black dark:bg-white w-[2.5rem] h-[2.5rem] rounded-2xl flex items-center justify-center">
+            <div className="bg-black dark:bg-white w-[2rem] h-[2rem] rounded-xl flex items-center justify-center">
               <Image
                 src="/images/Light-logo.svg"
-                width={32}
-                height={32}
+                width={24}
+                height={24}
                 alt="Krea AI Logo"
                 className="dark:invert"
               />
             </div>
-            <span className="text-2xl sm:text-3xl text-white dark:text-gray-100 font-roboto font-bold">
+            <span className="text-xl sm:text-2xl text-white dark:text-gray-100 font-roboto font-bold">
               Krea AI
             </span>
           </div>
 
-          <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-0">
-            <h2 className="text-white dark:text-gray-300 text-lg sm:text-xl font-semibold sm:mr-2">
+          <div className="flex flex-col items-center sm:flex-row sm:gap-0">
+            <h2 className="text-white dark:text-gray-300 text-xl font-medium sm:mr-2">
               curated by
             </h2>
-            <Image
-              src="/images/Mobbin.png"
-              width={200}
-              height={140}
-              alt="Mobbin"
-              className="w-[180px] h-[120px] sm:w-[200px] sm:h-[140px]"
-            />
+            <Image src="/images/Mobbin.png" width={180} height={144} alt="Mobbin" />
           </div>
         </div>
       </footer>

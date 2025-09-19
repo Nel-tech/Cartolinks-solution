@@ -32,7 +32,7 @@ export default function Header() {
             : "bg-transparent"
         )}
       >
-        <nav className="flex items-center justify-between px-6 sm:px-8 lg:px-12 pt-4 pb-3">
+        <nav className="flex items-center justify-between px-6 sm:px-8 md:gap-3 lg:px-12 pt-4 pb-3">
           {/* Left Section */}
           <div className="flex items-center gap-4">
             <Logo />

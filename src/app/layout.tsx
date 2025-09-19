@@ -14,11 +14,6 @@ export const metadata: Metadata = {
   title: "Cartolinks Solutions LTD - Internship Application",
   description:
     "Tech Internship Application for Frontend Developer positions. ⚡ Build a pixel-perfect Next.js + Tailwind CSS app with dark/light mode toggle as part of the assignment.",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

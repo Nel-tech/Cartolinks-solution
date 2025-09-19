@@ -37,7 +37,7 @@ export function HeroCarousel() {
   const slideWidth = 100 / slidesToShow;
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto p-4 sm:p-6">
+    <div className="relative w-full max-w-8xl mx-auto p-4 sm:p-6">
       <div className="relative overflow-hidden">
         <div
           className="flex gap-6 sm:gap-8 transition-transform duration-500 ease-in-out"

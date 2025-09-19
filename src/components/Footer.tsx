@@ -43,7 +43,7 @@ function Footer() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center sm:flex-row sm:gap-0">
+          <div className="flex  items-center">
             <h2 className="text-white dark:text-gray-300 text-xl font-medium sm:mr-2">
               curated by
             </h2>
